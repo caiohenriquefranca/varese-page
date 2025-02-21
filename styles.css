@@ -1,0 +1,471 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              height: 100%;
+              box-sizing: border-box;
+          }
+  
+  body{
+  color: #444;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-family: 'Roboto';
+
+  }
+
+  .tipo1 {
+    padding: 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid white; /* Borda branca */
+    border-radius: 10px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.1s, color 0.1s; /* Transição suave para mudanças */
+    font-weight: bold;
+  }
+  
+  .tipo1:hover {
+    color: #e4c6a4;
+    border: 2px solid #e4c6a4;
+  }
+  
+  .tipo2 {
+    padding: 20px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte */
+    color: white; /* Cor do texto */
+    background-color: #277160; /* Fundo transparente */
+    border-radius: 10px; /* Arredonda os cantos do botão */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.1s, color 0.1s; /* Transição suave para mudanças */
+    border: none;
+    font-weight: bold;
+  }
+  
+  .tipo2:hover {
+    background-color: #277176;
+    color: #fff;
+  }
+
+  .fontlight {
+    font-size: xxx-large;
+    font-weight: 300;
+  }
+
+  .fontblack {
+    font-size: xxx-large;
+    font-weight: 800;
+    color: #e4c6a4;
+  }
+
+  .fontbold {
+    font-weight: 700;
+  }
+
+  .h4 {
+    font-size: x-large;
+  }
+  /*HEADER-----------------------------------------------------------------------------------------------------------*/
+  #head {
+    align-items: center;
+    color: #fff;
+    padding: 50px 10px 50px 10px;
+    background-image: url(imagens/02.png);
+    background-position: bottom;
+    background-size: cover;
+    Background-color: #02a07a;
+    background-blend-mode: overlay;
+    /*background-attachment: fixed;*/
+  }
+
+  
+  #head img {
+width: 10%;  
+@media (max-width: 768px) {
+  width: 30%;
+}}
+/*--VALORES----------------------------------------------------------------------------------------------------*/
+#valores {
+    Background-color: #e4c6a4;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    padding: 50px 10px;
+    margin: 0px;
+}
+
+.fontblack2 {
+  margin: 0px;
+  font-size: calc(9vw + 1rem);
+  font-weight: 800;
+  color: #277160;
+}
+
+.fontbold2 {
+  font-weight: 700;
+  font-size: calc(2vw + 1rem);
+  color: #fff;
+}
+
+.fontbold3 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #000;
+}
+
+.fundobranco {
+  background-color: #fff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+/*CARROSSEL----------------------------------------------------------------------------------------------------*/
+#carrossel {
+  Background-color: #277160;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 0px;
+} 
+
+.titulopequeno{
+  color: #fff;
+  font-weight: bold;
+  margin: 30px 0px;
+}
+/*BLOCOS----------------------------------------------------------------------------------------------------*/
+#blocos {
+  color: #277160;
+  background-image: url(imagens/fundocarbono.png);
+  Background-color: #e4c6a4;
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  margin: 0px;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.blocos {
+  gap: 20px;
+  width: 100%;
+  display: flex;
+  align-items: top;
+  text-align: center;
+  justify-content: center;
+  
+  @media (max-width: 768px){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+.bloco {
+  position: relative;
+  width: 30%;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px){
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.blocotitulo{
+  color: #277160;
+  font-weight: bold;
+  margin: 20px;
+  font-size: x-large;
+  gap: 20px;
+}
+
+.blocontent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.fa-solid {
+  font-size: xx-large;
+}
+
+.fa-regular {
+  font-size: xx-large;
+}
+
+
+.fontblack3 {
+  font-weight: bolder;
+  color: #fff;
+}
+
+.fontlight3 {
+  font-weight: 400;
+}
+
+.zero {
+  color: #277160;
+}
+
+/*MAPA-----------------------------------------------------------------------------------------------------*/
+.video-section {
+    Background-color: #277160;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Ajuste a altura conforme necessário */
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+
+  @media (max-width: 768px) {
+    height: 50vh;
+  }
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.logorealize {
+  margin-left: 20px;
+  margin-bottom: 50px;
+  width: 60px;
+  height: 60px;
+  
+}
+
+.unidades {
+  font-size: 20px;
+}
+
+.logopreta {
+  justify-items: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.content {
+  position: relative;
+  transform: translate(-50px -50px);
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+/*FORMULÁRIO-------------------------------------------------------------------------------------------------*/
+  #cadastro {
+    font-size: 1.3rem;
+    background-image: url(imagens/fundocarbono.png);
+    Background-color: #e4c6a4;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
+  }
+  
+  .cadastrodiv1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .cadastrodiv {
+    width: 40%;
+    text-align: left;
+  
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 1.4rem;
+    }
+  }
+  
+  footer {
+    background-color: #277160;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  form{
+  justify-content: center;
+  align-items:center;
+  }
+  
+  label {
+        display: block;
+        margin-bottom: 8px;
+        color: #fff;
+  font-family: 'calibri';
+      }
+  
+      input {
+        width: 100%;
+        background-color:rgba(255, 255, 255, 0.9);
+        padding: 15px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        border-radius:10px;
+        border:solid 2px #ddd;
+        -webkit-border-radius:10px;
+        -moz-border-radius:10px;
+        -ms-border-radius:10px;
+        -o-border-radius:10px;
+}
+
+      input:hover {
+        border-color: #02a07a;
+}
+  
+  input::placeholder{
+  color:rgb(100, 100, 100);
+  font-family: 'calibri';
+  font-size: 1.2rem;
+  }
+  
+  small {
+        display: block;
+        margin-top: 5px;
+        color: #777;
+      }
+  
+  /* Estilo para a primeira seção do footer */
+  .first-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px; /* Espaçamento entre as seções */
+  }
+  
+  .first-section img {
+      width: 50px; /* Tamanho da logo */
+      height: auto; /* Mantém a proporção */
+      margin-right: 10px; /* Espaçamento à direita da logo */
+  }
+  
+  /* Estilo para a segunda seção do footer */
+  footer {
+    
+    font-family: 'calibri';
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+  
+  .second-section {
+    font-size: 1.3rem;
+    padding: 0px 20px;
+  }
+  
+  .obrigado {
+    font-family: 'calibri';
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .carousel-container {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .carousel-prev {
+    left: 10px;
+  }
+  
+  .carousel-next {
+    right: 10px;
+  }
+  
+  .carousel-prev:hover, .carousel-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  

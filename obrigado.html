@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Obrigado</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="icon" href="imagens/favicon.png" type="image/png">
+     <script src="script.js"></script>
+
+      <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '851786913671752');
+fbq('track', 'PageView');
+fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=851786913671752&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+</head>
+<body>
+    <div class="logopreta">
+        <img src="/imagens/logo2.png" alt="logo">
+    </div>
+  <div class="obrigado">
+  <h1>Obrigado por se cadastrar!</h1>
+    <p>Em breve entraremos em contato.</p>
+  </div>
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/22061060.js"></script>
+<!-- End of HubSpot Embed Code -->
+
+<!-- Código da API de Conversão -->
+    <script>
+        // Substitua pelo seu token de acesso e ID do Pixel
+        const accessToken = 'EAAMHvwm4ftwBO1aY1XZBrZA9c5EmDHSLmYaSNOMK9JI7l23pynZCXVxCjK6lR2IuQJJjPUGaemuHcvlFzPZATbhLXsU7IVErvPA1tjHQZAHn28dZBcqv8XpUFDqQAZBQwqohDKx0cmAfSTUbQuLwJdzHJ8SQtbF30fIjv8RtAbnlDWzPqq1rCHJqKkZBIhicdZAW3UAZDZD';
+        const pixelId = '851786913671752';
+
+        // Dados do evento
+        const eventData = {
+            event_name: 'Lead',
+            event_time: Math.floor(new Date() / 1000),
+            user_data: {
+                // Dados de exemplo, ajuste conforme necessário
+                em: 'HASHED_EMAIL', // Email com hash SHA256
+                ph: 'HASHED_PHONE', // Telefone com hash SHA256
+            },
+            custom_data: {
+                currency: 'BRL',
+                value: 0.00
+            },
+            event_source_url: window.location.href,
+            action_source: 'website'
+        };
+
+        // Enviar a solicitação para a API de Conversão
+        fetch(`https://graph.facebook.com/v11.0/851786913671752/events?access_token=EAAMHvwm4ftwBO1aY1XZBrZA9c5EmDHSLmYaSNOMK9JI7l23pynZCXVxCjK6lR2IuQJJjPUGaemuHcvlFzPZATbhLXsU7IVErvPA1tjHQZAHn28dZBcqv8XpUFDqQAZBQwqohDKx0cmAfSTUbQuLwJdzHJ8SQtbF30fIjv8RtAbnlDWzPqq1rCHJqKkZBIhicdZAW3UAZDZD`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({data: [eventData]})
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    </script>
+</body>
+</html>
